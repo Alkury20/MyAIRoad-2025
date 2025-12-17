@@ -225,6 +225,8 @@ def compute_quality_flags(summary: DatasetSummary, missing_df: pd.DataFrame) -> 
         score -= 0.1
     if flags["has_suspicious_id_duplicates"]:
         score -= 0.15
+    if flags["has_many_skipping_values"]:
+        score -= 0.1
 
     score = max(0.0, min(1.0, score))
     flags["quality_score"] = score
