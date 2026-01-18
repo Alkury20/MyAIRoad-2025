@@ -1,0 +1,10 @@
+{
+    "DecisionTree": {
+        "best_params": {
+            "max_depth": 5,
+            "min_samples_leaf": 5
+        },
+        "best_cv_score": 0.7019762957672502,
+        "cv_folds": 5
+    }
+}
